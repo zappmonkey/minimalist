@@ -7,11 +7,11 @@
 
 .btn {
   color: lighten(@text-color, 6%);
-  background-color: @button-background-color;
+  background-color: white;
   &:hover,
   &:focus {
     color: @text-color-highlight;
-    background-color: @button-background-color-hover;
+    background-color: white;
   }
   &:active {
     color: fade(@text-color-selected, 66%);
@@ -38,10 +38,10 @@
 
 .btn-color(@bg) {
   color: @text-color-selected;
-  background-color: @bg;
+  background-color: white;
   &:hover,
   &:focus {
-    background-color: lighten(@bg, 4%);
+    color: #0086b3
   }
   &:active {
     background-color: darken(@bg, 4%);
