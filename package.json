@@ -1,13 +1,13 @@
 {
-  "name": "minimalist-ui",
+  "name": "zappmonkey-ui",
   "theme": "ui",
   "version": "0.2.0",
-  "description": "Minimal UI Theme",
+  "description": "ZAPPMONKEY UI Theme",
   "keywords": [
     "ui",
     "theme"
   ],
-  "repository": "https://github.com/akash-bhardwaj/minimalist.git",
+  "repository": "https://github.com/zappmonkey/minimalist.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

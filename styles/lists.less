@@ -14,7 +14,10 @@
     &.selected {
       color: @text-color-selected;
       background-color: @background-color-selected;
-      &:before{ display: none; }
+        //   &:before{ display: none; }
+        &.status-modified {
+            color: #c90;
+        }
     }
   }
 }
@@ -22,8 +25,17 @@
 
 // List Tree -------------------
 .list-tree {
-  .selected {
+  .directory.selected {
     color: @text-color-selected;
+    font-style: italic;
+    .file {
+        color: @text-color;
+        font-style: normal;
+        &.status-modified {
+            color: #c90;
+        }
+
+    }
   }
 }
 
@@ -48,11 +60,17 @@
   border-radius: @component-border-radius;
   background-color: @overlay-background-color;
   box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
-
+  fon
   .list-group {
     margin-top: @popover-list-padding;
     li {
       padding-left: @popover-list-padding;
     }
   }
+}
+
+.autocomplete-plus {
+    .selected {
+        &:before{ display: none; }
+    }
 }

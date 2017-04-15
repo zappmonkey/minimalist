@@ -12,14 +12,17 @@
   .tab {
     color: @text-color;
     height: @tab-height;
-    line-height: @tab-height;
+    line-height: @tab-height - 2;
     font-size: @font-size;
     border-right: 1px solid @tab-border-color;
+
     &.active {
       color: @text-color-selected;
-      border-bottom : 2px solid #0086b3;
     }
 
+    .icon::before {
+        font-size: 12px;
+    }
 
     // Modified Icon (the blue circle) -------------------
     &.modified:not(:hover) .close-icon {
