@@ -7,20 +7,25 @@
 
 
 .tree-view-resizer {
-  border-right: 1px solid @base-border-color;
+    border-right: 1px solid @base-border-color;
 }
 
 .tree-view {
-  color: @text-color;
-  background-color: @tree-view-background-color;
+    color: @text-color;
+    background-color: @tree-view-background-color;
 
-  .list-item.selected {
-      color: #333;
-      font-weight: bold;
-    &.status-modified {
-        color: #c90;
-
+    .status-ignored {
+        color: #aaa;
     }
-
-  }
+    .list-item.selected {
+        color: #333;
+        font-weight: italic;
+        &.status-modified {
+            color: #c90;
+        }
+        &.status-ignored {
+            color: #aaa;
+            font-style: italic;
+        }
+    }
 }
