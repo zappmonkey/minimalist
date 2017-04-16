@@ -17,15 +17,17 @@
     .status-ignored {
         color: #aaa;
     }
-    .list-item.selected {
-        color: #333;
-        font-weight: italic;
-        &.status-modified {
-            color: #c90;
-        }
-        &.status-ignored {
-            color: #aaa;
+    .list-item {
+        .selected {
+            color: #333;
             font-style: italic;
+            &.status-modified {
+                color: #c90!important;
+            }
+            &.status-ignored {
+                color: #aaa;
+                font-style: italic;
+            }
         }
     }
 }

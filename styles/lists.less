@@ -16,7 +16,7 @@
             background-color: @background-color-selected;
             //   &:before{ display: none; }
             &.status-modified {
-                color: #c90;
+                color: #c90!important;
             }
         }
     }
@@ -33,7 +33,7 @@
             font-weight: normal;
             font-style: normal;
             &.status-modified {
-                color: #c90;
+                color: #c90!important;
             }
 
         }
@@ -61,14 +61,12 @@
 // Used as a popover for something like autocomplete.
 .select-list.popover-list {
     @popover-list-padding: @component-padding/2;
-
     padding: @popover-list-padding;
     border-radius: @component-border-radius;
     background-color: @overlay-background-color;
     box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
-    fon
     .list-group {
-        margin-top: @popover-list-padding;
+        margin-top: 0;
         li {
             padding-left: @popover-list-padding;
         }
@@ -78,5 +76,10 @@
 .autocomplete-plus {
     .selected {
         &:before{ display: none; }
+    }
+    .suggestion-description {
+        span, a {
+            font-size: 10px!important;
+        }
     }
 }
