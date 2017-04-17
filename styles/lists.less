@@ -12,12 +12,8 @@
 
         // We want to highlight the background of the list items because we dont know their size.
         &.selected {
-            font-weight: bold;
+            font-weight: 600;
             background-color: @background-color-selected;
-            //   &:before{ display: none; }
-            &.status-modified {
-                color: #c90!important;
-            }
         }
     }
 }
@@ -25,22 +21,24 @@
 
 // List Tree -------------------
 .list-tree {
-    .directory.selected {
-        color: #333;
-        font-style: italic;
-        .file {
-            color: @text-color;
-            font-weight: normal;
-            font-style: normal;
-            &.status-modified {
-                color: #c90!important;
-            }
-
+    .file, .directory {
+        color: @text-color;
+        font-weight: normal;
+        font-style: normal;
+        &.status-modified {
+            color: #c90!important;
         }
-    }
-    .directory {
-        .status-modified {
-            color: @text-color;
+        &.status-added {
+            color: @text-color-success;
+        }
+        &.status-removed {
+            color: @text-color-error;
+        }
+        &.status-renamed {
+            color: @text-color-info;
+        }
+        &.selected {
+            font-weight: 600;
         }
     }
 }
