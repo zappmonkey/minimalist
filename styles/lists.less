@@ -9,11 +9,15 @@
 .list-group {
     li {
         padding-left: @component-padding/2;
-
         // We want to highlight the background of the list items because we dont know their size.
         &.selected {
             font-weight: 600;
             background-color: @background-color-selected;
+        }
+    }
+    &.mark-active {
+        .selected::before {
+            position: relative;
         }
     }
 }
